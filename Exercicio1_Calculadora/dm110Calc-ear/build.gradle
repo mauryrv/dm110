@@ -1,0 +1,18 @@
+apply plugin: 'ear'
+
+dependencies {
+	deploy project(path: ':dm110Calc-war', configuration: 'archives')
+	earlib project(':dm110Calc-api')
+	earlib project(':dm110Calc-core')
+	
+}
+
+ear {
+	deploymentDescriptor {
+		 def warName = project(':dm110Calc-war').name
+		 def warVersion = project(':dm110Calc-war').version
+		 def warFileName = warName + '-' + warVersion + '.war'
+		 webModule(warFileName, 'dm110Calc')
+		
+	}
+}
