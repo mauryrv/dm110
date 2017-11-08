@@ -15,12 +15,12 @@ public interface CalcService {
 	@GET
 	@Path("/calc/sum")
 	@Produces(MediaType.APPLICATION_JSON)
-	ResultCalc sum(@QueryParam("first") int first, @QueryParam("last") int last);
+	ResultCalc sum(@QueryParam("first") int first, @QueryParam("second") int last);
 	
 	@POST
 	@Path("/calc/subtract")
 	@Produces(MediaType.APPLICATION_JSON)
-	ResultCalc subtract(@FormParam("first") int first, @FormParam("last") int last);
+	ResultCalc subtract(@FormParam("first") int first, @FormParam("second") int last);
 	
 	
 }

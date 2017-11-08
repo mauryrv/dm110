@@ -2,7 +2,7 @@ package br.inatel.dm110.calc.api;
 
 public class ResultCalc {
 	private int first;
-	private int last;
+	private int second;
 	private int result;
 	
 	public int getFirst() {
@@ -11,11 +11,11 @@ public class ResultCalc {
 	public void setFirs(int first) {
 		this.first = first;
 	}
-	public int getLast() {
-		return last;
+	public int getSecond() {
+		return second;
 	}
-	public void setLast(int last) {
-		this.last = last;
+	public void setSecond(int last) {
+		this.second = last;
 	}
 	public int getResult() {
 		return result;

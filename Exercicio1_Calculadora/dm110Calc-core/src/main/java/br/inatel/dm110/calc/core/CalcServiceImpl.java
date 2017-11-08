@@ -6,20 +6,20 @@ import br.inatel.dm110.calc.api.ResultCalc;
 public class CalcServiceImpl implements CalcService {
 
 	@Override
-	public ResultCalc sum(int first, int last) {
+	public ResultCalc sum(int first, int second) {
 		ResultCalc result = new ResultCalc();
 		result.setFirs(first);
-		result.setLast(last);
-		result.setResult(first+last);
+		result.setSecond(second);
+		result.setResult(first+second);
 		return result;
 	}
 
 	@Override
-	public ResultCalc subtract(int first, int last) {
+	public ResultCalc subtract(int first, int second) {
 		ResultCalc result = new ResultCalc();
 		result.setFirs(first);
-		result.setLast(last);
-		result.setResult(first-last);
+		result.setSecond(second);
+		result.setResult(first-second);
 		// TODO Auto-generated method stub
 		return result;
 	}
